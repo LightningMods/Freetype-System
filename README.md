@@ -1,5 +1,5 @@
 
-### FreeType Native to the PS4s OS
+## FreeType Native to the PS4s OS
 
 **Suppports PS4 Liborbis, SDL, and GLES**
 
