@@ -36,3 +36,8 @@ int FT_Stroker_Done(FT_Stroker  stroker);
 int FT_Stroker_New(FT_Library  library, FT_Stroker* astroker);
 int FT_Stroker_Set(FT_Stroker stroker, FT_Fixed  radius, FT_Stroker_LineCap   line_cap, FT_Stroker_LineJoin  line_join, FT_Fixed  miter_limit);```
 
+
+***Licensed Under FreeType License (FTL)***
+
+[PS4 System Port of LibFreetype](https://www.freetype.org/)
+
