@@ -310,9 +310,6 @@ FT_BEGIN_HEADER
   /*    You can use @FT_Outline_Translate if you need to translate the     */
   /*    outline's points.                                                  */
   /*                                                                       */
-  FT_EXPORT( void )
-  FT_Outline_Transform( const FT_Outline*  outline,
-                        const FT_Matrix*   matrix );
 
 
   /*************************************************************************/
