@@ -94,5 +94,11 @@ int FT_Stroker_Set(FT_Stroker stroker, FT_Fixed  radius, FT_Stroker_LineCap   li
 int FT_Open_Face(FT_Library library,const FT_Open_Args* args,FT_Long face_index,FT_Face* aface);
 signed long FT_MulFix(FT_Long a,FT_Long b);
 
+int(*FT_Select_Size)(FT_Face face, FT_Int strike_index);
+int(*FT_Render_Glyph)(FT_GlyphSlot slot,FT_Render_Mode render_mode);
+void(*FT_Outline_Transform)(const FT_Outline* outline,const FT_Matrix* matrix);
+int(*FT_Set_Charmap)(FT_Face face,FT_CharMap charmap);
+
+
 
 /*------------ END FREE TYPE -----------------------*/
