@@ -3634,7 +3634,7 @@ FT_BEGIN_HEADER
   /*                                                                       */
   /* <Order>                                                               */
   /*    FT_MulDiv                                                          */
-  /*    FT_MulFix                                                          */
+  /*    FT_*/
   /*    FT_DivFix                                                          */
   /*    FT_RoundFix                                                        */
   /*    FT_CeilFix                                                         */
@@ -3710,9 +3710,6 @@ FT_BEGIN_HEADER
   /*    _second_ argument of this function; this can make a great          */
   /*    difference.                                                        */
   /*                                                                       */
-  FT_EXPORT( FT_Long )
-  FT_MulFix( FT_Long  a,
-             FT_Long  b );
 
   /* */
 #endif
