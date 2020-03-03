@@ -2110,10 +2110,6 @@ FT_BEGIN_HEADER
   /* <Return>                                                              */
   /*    FreeType error code.  0~means success.                             */
   /*                                                                       */
-  FT_EXPORT( FT_Error )
-  FT_Select_Size( FT_Face  face,
-                  FT_Int   strike_index );
-
 
   /*************************************************************************/
   /*                                                                       */
@@ -2799,9 +2795,6 @@ FT_BEGIN_HEADER
   /* <Return>                                                              */
   /*    FreeType error code.  0~means success.                             */
   /*                                                                       */
-  FT_EXPORT( FT_Error )
-  FT_Render_Glyph( FT_GlyphSlot    slot,
-                   FT_Render_Mode  render_mode );
 
 
   /*************************************************************************/
@@ -3067,9 +3060,6 @@ FT_BEGIN_HEADER
   /*                                                                       */
   /*    It also fails if a type~14 charmap is selected.                    */
   /*                                                                       */
-  FT_EXPORT( FT_Error )
-  FT_Set_Charmap( FT_Face     face,
-                  FT_CharMap  charmap );
 
 
   /*************************************************************************
