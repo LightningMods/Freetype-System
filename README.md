@@ -5,6 +5,13 @@
 
 Prototypes can be found here and in *proto-include.h*
 
+When making a Stub with OOSDK or Flatz tool, making the library this name and ONLY This name
+is mandatory
+
+>libSceFreetype
+
+DO NOT MISNAME IT
+
 Included in the folllowing system prx
 >libSceFreeTypeOl.sprx
 
