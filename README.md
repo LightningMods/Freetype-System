@@ -6,7 +6,7 @@
 Prototypes can be found here and in *proto-include.h*
 
 When making a Stub with OOSDK or Flatz tool, making the library this name and ONLY This name
-is mandatory
+is mandatory to link against
 
 >libSceFreetype
 
