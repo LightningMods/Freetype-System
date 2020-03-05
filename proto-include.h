@@ -1,8 +1,16 @@
-#include "ftglyph.h"
-#include "ftstroke.h"
-#include "ft2build.h"
-#include "ftlcdfil.h"
 
+#include <freetype/ftglyph.h>
+#include <freetype/ftstroke.h>
+#include <ft2build.h>
+#include <freetype/ftlcdfil.h>
+
+
+#ifndef _SCE_FREETYPE_H_
+#define _SCE_FREETYPE_H_
+
+#ifdef __cplusplus 
+extern "C" {
+#endif
 
 /*------------ END FREE TYPE -----------------------*/
 
@@ -102,3 +110,8 @@ int FT_Set_Charmap(FT_Face face,FT_CharMap charmap);
 
 
 /*------------ END FREE TYPE -----------------------*/
+
+#ifdef __cplusplus
+}
+#endif
+
