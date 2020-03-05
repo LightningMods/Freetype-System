@@ -18,6 +18,10 @@ extern "C" {
 typedef struct FT_LibraryRec_* FT_Library;
 typedef struct FT_FaceRec_* FT_Face;
 typedef unsigned char  FT_Byte;
+typedef uint32_t u32;
+typedef unsigned int  FT_UInt;
+typedef int  FT_Error;
+
 
 #define FT_OPEN_MEMORY 0x1 
 #define FT_OPEN_STREAM 0x2
@@ -69,19 +73,10 @@ typedef const FT_ServiceDescRec* FT_ServiceDesc;
 /*------------FREE TYPE DEF -----------------------*/
 
 
-
-typedef unsigned int  FT_UInt;
-
-typedef int  FT_Error;
-#define FT_EXPORT_DEF( x )  extern  x
-
-//typedef signed long FT_Int32;
-
-
 int FT_New_Memory_Face(FT_Library library, const FT_Byte* file_base, FT_Long file_size, FT_Long face_index, FT_Face* aface);
 int FT_Set_Char_Size(FT_Face  face, FT_F26Dot6  char_width, FT_F26Dot6 char_height, FT_UInt horz_resolution, FT_UInt  vert_resolution);
-int FT_Load_Char(FT_Face face, FT_ULong  char_code, FT_Int32 load_flags);
 int FT_Init_FreeType(FT_Library* alibrary);
+int FT_Load_Char(FT_Face face, FT_ULong  char_code, FT_Int32 load_flags);
 int FT_Done_FreeType(FT_Library  library);
 int FT_Done_Face(FT_Face  face);
 int FT_New_Face(FT_Library   library, const char* filepathname, FT_Long  face_index, FT_Face* aface);
@@ -115,3 +110,4 @@ int FT_Set_Charmap(FT_Face face,FT_CharMap charmap);
 }
 #endif
 
+#endif
