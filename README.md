@@ -18,6 +18,13 @@ Included in the folllowing system prx
 in the following syspath
 >/system/common/lib/
 
+To use this Library you first MUST load it via this before
+Calling ANY Freetype Functions
+
+>sceSysmoduleLoadModule(SCE_SYSMODULE_FREETYPE_OL);
+
+
+** This currently only supports files extensions *.ttf and *.ttc**
 
 
 ```void FT_Set_Transform (FT_Face face, FT_Matrix* matrix, FT_Vector* delta);
